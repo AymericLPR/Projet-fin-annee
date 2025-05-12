@@ -1,28 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import NewsFeed from '../components/NewsFeed'; // Assurez-vous que le chemin est correct
-import { Container, Typography } from '@mui/material';
-import axios from 'axios';
+import React from 'react';
+import { Container, Typography, Box } from '@mui/material';
 
 function HomePage() {
-  const [news, setNews] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get('https://api.example.com/kpop-news') // Remplacer par l'URL de l'API réelle
-      .then((response) => {
-        setNews(response.data);
-      })
-      .catch((error) => console.log(error));
-  }, []);
-
   return (
     <Container>
-      <Typography variant="h4" gutterBottom>
-        Welcome to K-POP Actu
-      </Typography>
-      <NewsFeed news={news} />
+      <Box textAlign="center" py={5}>
+        <Typography variant="h3" gutterBottom color="primary">
+          Bienvenue sur K-POP Actu 🎤
+        </Typography>
+        <Typography variant="h6" color="textSecondary">
+          Retrouvez toutes les dernières vidéos et actualités sur vos groupes K-Pop préférés.
+        </Typography>
+      </Box>
     </Container>
   );
 }
 
 export default HomePage;
+

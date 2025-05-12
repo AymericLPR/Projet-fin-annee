@@ -1,25 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
-const artistData = {
-  blackpink: {
-    name: "BLACKPINK",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/BLACKPINK_Kill_This_Love_2019.jpg",
-    bio: "BLACKPINK est un girl group sud-coréen formé par YG Entertainment. Il est reconnu pour ses hits mondiaux et ses performances puissantes.",
-    albums: ["Square Up", "Kill This Love", "The Album", "Born Pink"],
-    youtube: "https://www.youtube.com/@BLACKPINKOFFICIAL",
-    spotify: "https://open.spotify.com/artist/41MozSoPIsD1dJM0CLPjZF"
-  },
-  bts: {
-    name: "BTS",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/00/BTS_for_Love_Myself_campaign.png",
-    bio: "BTS est un boys band sud-coréen connu mondialement. Il est formé de 7 membres et aborde des thèmes profonds dans ses chansons.",
-    albums: ["Wings", "Love Yourself", "Map of the Soul", "BE"],
-    youtube: "https://www.youtube.com/@BANGTANTV",
-    spotify: "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
-  },
-  
-};
+import artistData from "../data/artistData"; // Import des données
 
 function ArtistPage() {
   const { id } = useParams();
@@ -31,7 +12,12 @@ function ArtistPage() {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-4xl font-bold mb-4 text-center text-pink-600">{artist.name}</h1>
+      <h1 className="text-4xl font-bold mb-2 text-center text-pink-600">
+        {artist.name}
+      </h1>
+      <p className="text-center text-gray-600 mb-6 italic">
+        Agence : {artist.agency}
+      </p>
 
       <img
         src={artist.image}
@@ -42,8 +28,17 @@ function ArtistPage() {
         className="w-full max-h-[400px] object-cover rounded shadow mb-6"
       />
 
-      <p className="text-gray-700 mb-6 leading-relaxed">{artist.bio}</p>
+      {/* Membres */}
+      <h2 className="text-2xl font-semibold mb-4">👤 Membres</h2>
+      <ul className="mb-6 space-y-2">
+        {artist.members.map((member, index) => (
+          <li key={index} className="border p-2 rounded bg-gray-50 shadow-sm">
+            <strong>{member.name}</strong> — {member.role}, {member.age} ans
+          </li>
+        ))}
+      </ul>
 
+      {/* Albums */}
       <h2 className="text-2xl font-semibold mb-2">📀 Albums</h2>
       <ul className="list-disc list-inside mb-6">
         {artist.albums.map((album, index) => (
@@ -51,6 +46,17 @@ function ArtistPage() {
         ))}
       </ul>
 
+      {/* Statut */}
+      <div className="mb-6">
+        <h2 className="text-xl font-semibold">📅 Statut</h2>
+        <p className="text-gray-700">
+          {artist.end
+            ? `Actif de ${artist.debut} à ${artist.end}`
+            : `En activité depuis ${artist.debut}`}
+        </p>
+      </div>
+
+      {/* Liens externes */}
       <div className="flex gap-4 mt-6">
         <a
           href={artist.youtube}
