@@ -35,6 +35,9 @@ function Navbar() {
                     <ListItem button component={Link} to="/events" onClick={() => setOpen(false)}>
                         <ListItemText primary="Events" />
                     </ListItem>
+                    <ListItem button component={Link} to="/artists" onClick={() => setOpen(false)}>
+                        <ListItemText primary="Artists" />
+                    </ListItem>
                 </List>
             </Drawer>
         </>

@@ -18,7 +18,7 @@ function HomePage() {
   return (
     <Container>
       <Typography variant="h4" gutterBottom>
-        Welcome to the K-POP Magazine
+        Welcome to K-POP Actu
       </Typography>
       <NewsFeed news={news} />
     </Container>

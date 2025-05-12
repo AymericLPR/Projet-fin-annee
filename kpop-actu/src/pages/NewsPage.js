@@ -27,7 +27,7 @@ const NewsPage = () => {
 
   return (
     <Container>
-      <Typography variant="h4" gutterBottom>📰 Dernières actualités K-Pop</Typography>
+      <Typography variant="h4" gutterBottom>📰 Last K-Pop's news</Typography>
       <Grid container spacing={3}>
         {/* Affichage des vidéos YouTube */}
         {videos.map((video, index) => (
