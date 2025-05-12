@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ton CSS personnalisé */
+/* CSS personnalisé */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -22,4 +22,26 @@ h1 {
 
 .nav-links {
   margin-left: 50px; /* Décale les liens Home, News, Events */
+}
+
+/* Rendre les flèches visibles en noir */
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+  font-size: 30px;
+}
+
+/* Éloigner les flèches du contenu */
+.slick-prev {
+  left: -40px !important;
+}
+
+.slick-next {
+  right: -40px !important;
+}
+
+/* Centrer verticalement les flèches */
+.slick-prev,
+.slick-next {
+  top: 40%;
 }

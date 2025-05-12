@@ -122,7 +122,67 @@ const artistData = {
     albums: ["Treasure EP.FIN", "ZERO : FEVER", "THE WORLD EP.FIN"],
     youtube: "https://www.youtube.com/@ATEEZofficial",
     spotify: "https://open.spotify.com/artist/68KmkJeZGfwe1OUaivBa2L"
-  }
+  },
+
+  everglow: {
+  id: "everglow",
+  name: "EVERGLOW",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Everglow_at_KCON_2019.jpg/400px-Everglow_at_KCON_2019.jpg",
+  agency: "Yuehua Entertainment",
+  status: "En activité",
+  debut: "2019",
+  members: [
+    { name: "E:U", role: "Leader", age: 26 },
+    { name: "Sihyeon", role: "Chanteuse", age: 24 },
+    { name: "Mia", role: "Rappeuse", age: 24 },
+    { name: "Onda", role: "Chanteuse", age: 24 },
+    { name: "Aisha", role: "Rappeuse", age: 23 },
+    { name: "Yiren", role: "Maknae", age: 23 }
+  ],
+  albums: ["Reminiscence", "Last Melody"],
+  youtube: "https://www.youtube.com/@EVERGLOW",
+  spotify: "https://open.spotify.com/artist/5t5FqBwTcgKTaWmfEbwQY9"
+},
+
+le_sserafim: {
+  id: "le_sserafim",
+  name: "LE SSERAFIM",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/LE_SSERAFIM_220505.jpg/400px-LE_SSERAFIM_220505.jpg",
+  agency: "Source Music / HYBE",
+  status: "En activité",
+  debut: "2022",
+  members: [
+    { name: "Sakura", role: "Chanteuse", age: 26 },
+    { name: "Kim Chaewon", role: "Leader", age: 23 },
+    { name: "Huh Yunjin", role: "Rappeuse", age: 22 },
+    { name: "Kazuha", role: "Danseuse", age: 21 },
+    { name: "Hong Eunchae", role: "Maknae", age: 18 }
+  ],
+  albums: ["Fearless", "Antifragile", "Unforgiven"],
+  youtube: "https://www.youtube.com/@LESSERAFIM_official",
+  spotify: "https://open.spotify.com/artist/6XGqR9hTrXy3r1vI1vlFzY"
+},
+
+exo: {
+  id: "exo",
+  name: "EXO",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/EXO_Love_Shot.jpg/400px-EXO_Love_Shot.jpg",
+  agency: "SM Entertainment",
+  status: "En activité",
+  debut: "2012",
+  members: [
+    { name: "Suho", role: "Leader", age: 33 },
+    { name: "Baekhyun", role: "Chanteur", age: 32 },
+    { name: "Chanyeol", role: "Rappeur", age: 32 },
+    { name: "D.O.", role: "Chanteur", age: 31 },
+    { name: "Kai", role: "Danseur", age: 30 },
+    { name: "Sehun", role: "Maknae", age: 30 }
+  ],
+  albums: ["XOXO", "EXODUS", "The War", "Obsession"],
+  youtube: "https://www.youtube.com/@weareoneEXO",
+  spotify: "https://open.spotify.com/artist/3cjEqqelV9wLSw1Zcl2ZhU"
+}
+
 };
 
 export default artistData;

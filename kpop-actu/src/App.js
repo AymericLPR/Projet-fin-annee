@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage';
 import NewsPage from './pages/NewsPage';
 import EventPage from './pages/EventPage';
 import ArtistsPage from './pages/ArtistsPage';
-import ArtistPage from './pages/ArtistPage';   
+import ArtistPage from './pages/ArtistPage';
 
 function App() {
   return (
