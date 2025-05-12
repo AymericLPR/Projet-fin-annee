@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import dayjs from "dayjs";
 import "dayjs/locale/fr";
+import isoWeek from "dayjs/plugin/isoWeek";
+dayjs.extend(isoWeek);
 dayjs.locale("fr");
 
 const hours = Array.from({ length: 12 }, (_, i) => 8 + i); // de 8h à 19h
@@ -9,7 +11,7 @@ function WeeklyCalendar() {
   const [currentDate, setCurrentDate] = useState(dayjs());
   const [events, setEvents] = useState([]);
 
-  const startOfWeek = currentDate.startOf("week").add(1, "day"); // lundi
+  const startOfWeek = currentDate.startOf("isoWeek"); // lundi
   const daysOfWeek = Array.from({ length: 7 }, (_, i) => startOfWeek.add(i, "day"));
 
   const handleAddEvent = (dayIndex, hour) => {

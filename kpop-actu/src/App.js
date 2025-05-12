@@ -15,6 +15,7 @@ function App() {
       {/* Ajout de marge pour éviter que le contenu ne colle à la navbar */}
       <div style={{ paddingTop: '60px' }}>
       <div className="content">
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/artist/:id" element={<ArtistPage />} />

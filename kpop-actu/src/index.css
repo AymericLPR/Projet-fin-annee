@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ton CSS personnalisé */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
