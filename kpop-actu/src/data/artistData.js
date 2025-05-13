@@ -20,7 +20,7 @@ const artistData = {
   bts: {
     id: "bts",
     name: "BTS",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/BTS_for_Love_Myself_campaign.png/400px-BTS_for_Love_Myself_campaign.png",
+    image: "https://wallpaperaccess.com/full/749900.jpg",
     agency: "BigHit Music",
     status: "En pause (service militaire)",
     debut: "2013",
@@ -41,7 +41,7 @@ const artistData = {
   newjeans: {
     id: "newjeans",
     name: "NewJeans",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/NewJeans_KCON_2022.jpg/400px-NewJeans_KCON_2022.jpg",
+    image: "https://images.lifestyleasia.com/wp-content/uploads/sites/2/2023/03/07151011/press-release-photo-1-1-1-1381x900.jpeg",
     agency: "ADOR / HYBE",
     status: "En activité",
     debut: "2022",
@@ -60,7 +60,7 @@ const artistData = {
   straykids: {
     id: "straykids",
     name: "Stray Kids",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Stray_Kids_in_2021.png/400px-Stray_Kids_in_2021.png",
+    image: "https://unniepop.cl/wp-content/uploads/2023/04/stray-kids-full-album-unniepop.jpg",
     agency: "JYP Entertainment",
     status: "En activité",
     debut: "2018",
@@ -82,7 +82,7 @@ const artistData = {
   twice: {
     id: "twice",
     name: "TWICE",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Twice_KCON_2018.jpg/400px-Twice_KCON_2018.jpg",
+    image: "https://www.billboard.com/wp-content/uploads/2023/03/feature-TWICE-women-in-music-billboard-2023-bb-sami-drasin-12-1548.jpg?w=1024",
     agency: "JYP Entertainment",
     status: "En activité",
     debut: "2015",
@@ -105,7 +105,7 @@ const artistData = {
   ateez: {
     id: "ateez",
     name: "ATEEZ",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/ATEEZ_2022_KCON.png/400px-ATEEZ_2022_KCON.png",
+    image: "https://www.nme.com/wp-content/uploads/2022/07/ateez-kq-entertainment-120722.jpg",
     agency: "KQ Entertainment",
     status: "En activité",
     debut: "2018",
@@ -127,7 +127,7 @@ const artistData = {
   everglow: {
   id: "everglow",
   name: "EVERGLOW",
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Everglow_at_KCON_2019.jpg/400px-Everglow_at_KCON_2019.jpg",
+  image: "https://k-gen.fr/wp-content/uploads/2021/11/EVERGLOW-RETURN-OF-THE-GIRL-PHOTO-TEASER1-scaled.jpg",
   agency: "Yuehua Entertainment",
   status: "En activité",
   debut: "2019",
@@ -147,7 +147,7 @@ const artistData = {
 le_sserafim: {
   id: "le_sserafim",
   name: "LE SSERAFIM",
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/LE_SSERAFIM_220505.jpg/400px-LE_SSERAFIM_220505.jpg",
+  image: "https://th.bing.com/th/id/OIP.8AaXEwWmQoHljMeMwkbXHwHaE8?cb=iwp2&rs=1&pid=ImgDetMain",
   agency: "Source Music / HYBE",
   status: "En activité",
   debut: "2022",
@@ -166,7 +166,7 @@ le_sserafim: {
 exo: {
   id: "exo",
   name: "EXO",
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/EXO_Love_Shot.jpg/400px-EXO_Love_Shot.jpg",
+  image: "https://th.bing.com/th/id/OIP.XoMRaZtpGcVFRHyt3xXWcAHaFh?cb=iwp2&rs=1&pid=ImgDetMain",
   agency: "SM Entertainment",
   status: "En activité",
   debut: "2012",

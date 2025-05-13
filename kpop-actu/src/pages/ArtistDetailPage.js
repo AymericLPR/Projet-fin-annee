@@ -1,6 +1,7 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import artistData from "../data/artistData"; // Import des données
+import { useParams, Link } from "react-router-dom";
+import artistData from "../data/artistData";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 function ArtistPage() {
   const { id } = useParams();
@@ -12,6 +13,15 @@ function ArtistPage() {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
+      {/* Lien de retour */}
+      <Link
+        to="/artists"
+        className="inline-flex items-center text-blue-600 hover:underline mb-4"
+      >
+        <ArrowBackIcon fontSize="small" className="mr-1" />
+        Retour à la liste
+      </Link>
+
       <h1 className="text-4xl font-bold mb-2 text-center text-pink-600">
         {artist.name}
       </h1>
